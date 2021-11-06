@@ -1,0 +1,23 @@
+.title {
+  &__info {
+    display: flex;
+    @media screen and (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+    h4 {
+       @media screen and (max-width: $tablet) {
+       width: 100%;
+     }
+   }  
+  }
+  &__dropdown {
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  &__search {
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+}

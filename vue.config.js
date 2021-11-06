@@ -8,13 +8,13 @@ module.exports = {
       },
     },
   },
-  css: {
-    loaderOptions: {
-      sass: {
-        data: '@import "@/assets/scss/main.scss";',
-      },
-    },
-  },
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       data: '@import "@/assets/scss/main.scss";',
+  //     },
+  //   },
+  // },
   devServer: {
     host: '0.0.0.0',
   },
