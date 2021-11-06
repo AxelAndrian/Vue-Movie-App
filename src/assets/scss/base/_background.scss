@@ -1,0 +1,8 @@
+.background {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  min-height: calc(100vh - 202px);
+  @media screen and (max-width: $tablet) {
+    padding: 20px;
+  }
+}

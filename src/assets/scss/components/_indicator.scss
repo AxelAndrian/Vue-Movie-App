@@ -1,0 +1,16 @@
+.indicator {
+  font-size: 16px;
+  color: #2e4994 !important;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: #253B78 !important;
+  }
+  &__left {
+    width: 16px;
+    transform: rotate(180deg);
+  }
+  &__right {
+    width: 16px;
+  }
+}

@@ -1,0 +1,125 @@
+.card {
+  &__wrapper {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 32px;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 12px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f7f7f7;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #2e4994;
+      &:hover {
+        background: #1D3370;
+      }
+    }
+  }
+  &__content {
+    margin: 0 12px;
+    min-width: 280px;
+    width: 280px;
+    min-height: 360px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+    &--small {
+      min-width: 240px;
+      width: 240px;
+      min-height: 320px;
+      height: 320px;
+      margin: 0 16px;
+    }
+    &:hover {
+      transform: translateY(20px);
+      &:before {
+        opacity: 1;
+      }
+      .info {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      background: rgba(black, 0.6);
+      z-index: 2;
+      transition: 0.5s;
+      opacity: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+    }
+    .info {
+      position: relative;
+      z-index: 3;
+      color: white;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s;
+      h3 {
+        margin: 0px;
+      }
+      p {
+        letter-spacing: 1px;
+        font-size: 12px;
+        margin-top: 8px;
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        margin: 4px 0;
+        img {
+          width: 16px;
+          height: auto;
+          position: relative;
+          object-fit: contain;
+        }
+        p {
+          font-size: 12px;
+          color: white;
+          margin: 0;
+        }
+      }
+      button {
+        padding: 0.3rem 1rem;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        background: white;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.4s ease;
+        &:hover {
+          background: #1D3370;
+				  color: white;
+        }
+      }
+    }
+  }
+}
